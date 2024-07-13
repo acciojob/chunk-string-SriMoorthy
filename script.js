@@ -1,7 +1,7 @@
 function stringChop(str, size){
 
-  if(str.length==''){
-	  return []
+  if(str.length == ''){
+	  return ''
   }
 
   if(str.length > size){
