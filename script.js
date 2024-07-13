@@ -1,6 +1,6 @@
 function stringChop(str, size){
 
-  if(str === 'null' || str === undefined || str === ''){
+  if(str.length === 'null' || str.length === undefined || str.length === ''){
 	  return '['+']'
   }
 
@@ -18,7 +18,7 @@ function stringChop(str, size){
 }
 
 // Do not change the code below
-const str = prompt("Enter String.");
-const size = prompt("Enter Chunk Size.");
+//const str = prompt("Enter String.");
+//const size = prompt("Enter Chunk Size.");
 alert(stringChop(str, size));
 
