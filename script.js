@@ -1,7 +1,7 @@
 function stringChop(str, size){
 
   if(str === null || str === undefined || str === ''){
-	  return '['+']'
+	  return
   }
 
   if(str.length > size){
