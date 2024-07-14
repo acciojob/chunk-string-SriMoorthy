@@ -1,6 +1,6 @@
 function stringChop(str, size){
 
-  if(str.length === 'null' || str.length === undefined || str.length === ''){
+  if(str === null || str === undefined || str === ''){
 	  return '['+']'
   }
 
