@@ -1,20 +1,19 @@
-function stringChop(str, size){
-
-  if(str === null || str === undefined || str === ''){
-	  return
-  }
-
-  if(str.length > size){
-    let arr = []
-    for(let i = 0; i < str.length; i+=size){
-      let x = str.slice(i,i+size)
-      arr.push(x)
+function chunkString(str, chunkLength) {
+    // Check if the input string is null and return an empty array if it is
+    if (str === null) {
+        return [];
     }
-    return arr
-  }
-  else{
-    return [str]
-  }
+
+    // Initialize an array to store the chunks
+    const chunks = [];
+
+    // Loop through the string and slice it into chunks
+    for (let i = 0; i < str.length; i += chunkLength) {
+        chunks.push(str.slice(i, i + chunkLength));
+    }
+
+    // Return the array of chunks
+    return chunks;
 }
 
 // Do not change the code below

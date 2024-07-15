@@ -1,1 +1,19 @@
 /*  your css code here. If applicable */
+function stringChop(str, size){
+
+  if(str === null || str === undefined || str === ''){
+	  return
+  }
+
+  if(str.length > size){
+    let arr = []
+    for(let i = 0; i < str.length; i+=size){
+      let x = str.slice(i,i+size)
+      arr.push(x)
+    }
+    return arr
+  }
+  else{
+    return [str]
+  }
+}
