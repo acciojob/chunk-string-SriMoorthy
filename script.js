@@ -1,4 +1,4 @@
-function chunkString(str, chunkLength) {
+function stringChop(str, chunkLength) {
     // Check if the input string is null and return an empty array if it is
     if (str === null) {
         return [];
